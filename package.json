@@ -1,0 +1,51 @@
+{
+  "name": "ink-divider",
+  "version": "0.1.0",
+  "description": "Divider component for Ink",
+  "license": "MIT",
+  "repository": "https://www.github.com/juresotosek/ink-divider",
+  "author": {
+    "name": "Jure Sotosek",
+    "email": "jure.sotosek@gmail.com",
+    "url": "https://www.github.com/JureSotosek"
+  },
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "build": "babel src --out-dir=dist",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "ink",
+    "ink-component",
+    "ink-divider",
+    "ink-cli"
+  ],
+  "dependencies": {
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "eslint-config-xo-react": "^0.13.0",
+    "eslint-plugin-react": "^7.1.0",
+    "ink": "^0.5.0"
+  },
+  "babel": {
+    "plugins": [
+      [
+        "transform-react-jsx",
+        {
+          "pragma": "h",
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
