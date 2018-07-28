@@ -19,12 +19,54 @@ render(<Divider title={'Title'} />);
 
 ## Props
 
-### name
+### title
 
 Type: `string`<br>
-Default: `"Ink"`
+Default: `""`
 
-Lorem ipsum.
+Title shown in the middle of the divider.
+
+### width
+
+Type: `number`<br>
+Default: `50`
+
+Width of the divider.
+
+### padding
+
+Type: `number`<br>
+Default: `1`
+
+Padding at the start and the end of the divider.
+
+### titlePadding
+
+Type: `string`<br>
+Default: `1`
+
+Padding besides the title in the middle.
+
+### titleColor
+
+Type: `string`<br>
+Default: `"white"`
+
+Color of the title.
+
+### dividerChar
+
+Type: `string`<br>
+Default: `"-"`
+
+Char used as a divider.
+
+### dividerColor
+
+Type: `string`<br>
+Default: `"gray"`
+
+Color of the divider chars.
 
 ## License
 
