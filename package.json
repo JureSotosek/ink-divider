@@ -3,11 +3,14 @@
   "version": "0.0.0-development",
   "description": "Divider component for Ink",
   "license": "MIT",
-  "repository": "https://www.github.com/juresotosek/ink-divider.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/juresotosek/ink-divider.git"
+  },
   "author": {
     "name": "Jure Sotosek",
     "email": "jure.sotosek@gmail.com",
-    "url": "https://www.github.com/JureSotosek"
+    "url": "https://github.com/JureSotosek"
   },
   "main": "dist/index.js",
   "engines": {
