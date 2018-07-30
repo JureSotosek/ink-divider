@@ -1,6 +1,6 @@
 # ink-divider
 
-> 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink)
+> 👩🏼‍🎨 Divider component for Ink
 
 ## Install
 
