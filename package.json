@@ -18,7 +18,6 @@
     "test": "ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
-    "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
   "files": [
@@ -41,7 +40,6 @@
     "eslint-config-xo-react": "^0.13.0",
     "eslint-plugin-react": "^7.1.0",
     "ink": "^0.5.0",
-    "travis-deploy-once": "^5.0.1",
     "semantic-release": "^15.9.1"
   },
   "babel": {
