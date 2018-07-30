@@ -43,7 +43,7 @@
     "eslint-config-xo-react": "^0.13.0",
     "eslint-plugin-react": "^7.1.0",
     "ink": "^0.5.0",
-    "semantic-release": "^15.9.1"
+    "semantic-release": "^15.9.2"
   },
   "babel": {
     "plugins": [
