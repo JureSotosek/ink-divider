@@ -2,7 +2,10 @@ const { h, render } = require('ink');
 const Divider = require('..');
 
 const Advanced = () => (
-  <Divider title="Section 1" dividerChar="+" dividerColor="magenta" />
+  <span>
+    <br />
+    <Divider title="Title" dividerChar="!" dividerColor="red" />
+  </span>
 );
 
 render(<Advanced />);

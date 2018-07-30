@@ -1,6 +1,6 @@
 {
   "name": "ink-divider",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Divider component for Ink",
   "license": "MIT",
   "repository": "https://www.github.com/juresotosek/ink-divider",
@@ -28,7 +28,8 @@
     "ink-cli"
   ],
   "dependencies": {
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "string-width": "^2.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
