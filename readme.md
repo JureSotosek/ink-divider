@@ -1,6 +1,6 @@
 # ink-divider
 
-[![Build Status](https://travis-ci.org/JureSotosek/ink-divider.svg?branch=master)](https://travis-ci.org/JureSotosek/ink-divider)
+[![CircleCI](https://circleci.com/gh/JureSotosek/ink-divider.svg?style=svg)](https://circleci.com/gh/JureSotosek/ink-divider)
 
 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink).
 
