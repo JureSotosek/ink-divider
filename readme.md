@@ -30,21 +30,21 @@ Title shown in the middle of the divider.
 
 ### width
 
-Type: `number`<br>
+Type: `int`<br>
 Default: `50`
 
 Width of the divider.
 
 ### padding
 
-Type: `number`<br>
+Type: `int`<br>
 Default: `1`
 
 Padding at the start and the end of the divider.
 
 ### titlePadding
 
-Type: `number`<br>
+Type: `int`<br>
 Default: `1`
 
 Padding besides the title in the middle.
