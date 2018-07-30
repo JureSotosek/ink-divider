@@ -1,6 +1,6 @@
-# 👩🏼‍🎨 ink-divider
+# ink-divider
 
-> Divider component for Ink
+> 👩🏼‍🎨 Divider component for Ink
 
 ## Install
 
