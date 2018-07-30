@@ -18,7 +18,7 @@
     "test": "ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
-    "travis-deploy-once": "travis-deploy-once --pro",
+    "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
   "files": [
