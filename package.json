@@ -1,6 +1,6 @@
 {
   "name": "ink-divider",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Divider component for Ink",
   "license": "MIT",
   "repository": "https://www.github.com/juresotosek/ink-divider",
@@ -17,7 +17,9 @@
     "pretest": "npm run build",
     "test": "ava",
     "build": "babel src --out-dir=dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "dist"
@@ -38,7 +40,9 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "eslint-config-xo-react": "^0.13.0",
     "eslint-plugin-react": "^7.1.0",
-    "ink": "^0.5.0"
+    "ink": "^0.5.0",
+    "travis-deploy-once": "^5.0.1",
+    "semantic-release": "^15.9.1"
   },
   "babel": {
     "plugins": [
