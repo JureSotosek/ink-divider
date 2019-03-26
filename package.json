@@ -32,6 +32,10 @@
     "ink-divider",
     "ink-cli"
   ],
+  "peerDependencies": {
+    "ink": ">=2.0.0",
+    "react": ">=16.8.0"
+  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "string-width": "^4.0.0"
