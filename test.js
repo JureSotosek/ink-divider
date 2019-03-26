@@ -1,19 +1,11 @@
-const { h, Color, renderToString } = require('ink');
-const test = require('ava');
-
-const Divider = require('.');
+import test from 'ava';
+import React from 'react';
+import {render} from 'ink-testing-library';
+import Divider from '.';
 
 test('Basic divider', t => {
-  const myDivider = renderToString(<Divider title="Title" />);
+	const {lastFrame} = render(<Divider title="Title"/>);
 
-  const expected = renderToString(
-    <div>
-      {' '}
-      <Color keyword={'grey'}>{'─────────────────────'}</Color>
-      <Color keyword={'white'}>{' Title '}</Color>
-      <Color keyword={'grey'}>{'─────────────────────'}</Color>{' '}
-    </div>
-  );
-
-  t.is(myDivider, expected);
+	console.log(lastFrame());
+	t.snapshot(lastFrame());
 });
