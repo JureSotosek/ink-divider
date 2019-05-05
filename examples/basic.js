@@ -1,11 +1,12 @@
-const { h, render } = require('ink');
-const Divider = require('..');
+import React from 'react';
+import {render} from 'ink';
+import Divider from '..';
 
 const Basic = () => (
-  <span>
-    <br />
-    <Divider title="Title" />
-  </span>
+	<span>
+		<br/>
+		<Divider title="Title"/>
+	</span>
 );
 
-render(<Basic />);
+render(<Basic/>);

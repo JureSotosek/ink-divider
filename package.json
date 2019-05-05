@@ -18,7 +18,7 @@
   },
   "scripts": {
     "pretest": "npm run build",
-    "test": "ava",
+    "test": "xo && ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
     "semantic-release": "semantic-release"
@@ -32,29 +32,41 @@
     "ink-divider",
     "ink-cli"
   ],
+  "peerDependencies": {
+    "ink": ">=2.0.0",
+    "react": ">=16.8.0"
+  },
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "string-width": "^2.1.1"
+    "prop-types": "^15.7.2",
+    "string-width": "^4.0.0"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
-    "babel-cli": "^6.24.1",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-react": "^7.0.0",
+    "ava": "^1.4.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "ink": "^0.5.0",
-    "semantic-release": "^15.9.2"
+    "eslint-config-xo-react": "^0.19.0",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "ink": "^2.0.6",
+    "ink-testing-library": "^1.0.1",
+    "react": "^16.8.5",
+    "semantic-release": "^15.9.2",
+    "xo": "^0.24.0"
   },
   "babel": {
-    "plugins": [
-      [
-        "transform-react-jsx",
-        {
-          "pragma": "h",
-          "useBuiltIns": true
-        }
-      ]
+    "presets": [
+      "@ava/stage-4",
+      "@babel/preset-react"
     ]
   },
   "ava": {
-    "babel": "inherit"
+    "color": true
+  },
+  "xo": {
+    "extends": [
+      "xo-react"
+    ]
   }
 }

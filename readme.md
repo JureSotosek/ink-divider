@@ -13,8 +13,9 @@ $ npm install ink-divider
 ## Usage
 
 ```js
-const { h, render } = require('ink');
-const Divider = require('ink-divider');
+import React from 'react';
+import {render} from 'ink';
+import Divider from 'ink-divider';
 
 render(<Divider title={'Title'} />);
 ```
