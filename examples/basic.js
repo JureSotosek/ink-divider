@@ -3,10 +3,7 @@ import {render} from 'ink';
 import Divider from '..';
 
 const Basic = () => (
-	<span>
-		<br/>
-		<Divider title="Title"/>
-	</span>
+	<Divider title="Title"/>
 );
 
 render(<Basic/>);

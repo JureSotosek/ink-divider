@@ -21,7 +21,8 @@
     "test": "xo && ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "examples": "babel-node examples/basic.js && babel-node examples/advanced.js"
   },
   "files": [
     "dist"
@@ -33,7 +34,7 @@
     "ink-cli"
   ],
   "peerDependencies": {
-    "ink": ">=2.0.0",
+    "ink": ">=3.0.0",
     "react": ">=16.8.0"
   },
   "dependencies": {
@@ -41,16 +42,17 @@
     "string-width": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
     "@babel/preset-react": "^7.0.0",
     "ava": "^1.4.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "eslint-config-xo-react": "^0.19.0",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
-    "ink": "^2.5.0",
-    "ink-testing-library": "^1.0.2",
+    "ink": "^3.0.3",
+    "ink-testing-library": "^2.0.1",
     "react": "^16.8.5",
     "semantic-release": "^15.9.2",
     "xo": "^0.25.3"

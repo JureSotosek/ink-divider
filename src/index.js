@@ -1,5 +1,5 @@
 import React from 'react';
-import {Color, Box} from 'ink';
+import {Box, Text} from 'ink';
 import PropTypes from 'prop-types';
 import stringWidth from 'string-width';
 
@@ -35,11 +35,13 @@ const Divider = ({
 
 	return (
 		<Box flexDirection="row">
-			{paddingString}
-			<Color keyword={dividerColor}>{dividerSideString}</Color>
-			<Color keyword={titleColor}>{titleString}</Color>
-			<Color keyword={dividerColor}>{dividerSideString}</Color>
-			{paddingString}
+			<Text>
+				{paddingString}
+				<Text color={dividerColor}>{dividerSideString}</Text>
+				<Text color={titleColor}>{titleString}</Text>
+				<Text color={dividerColor}>{dividerSideString}</Text>
+				{paddingString}
+			</Text>
 		</Box>
 	);
 };

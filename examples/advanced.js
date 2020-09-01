@@ -3,10 +3,7 @@ import {render} from 'ink';
 import Divider from '..';
 
 const Advanced = () => (
-	<span>
-		<br/>
-		<Divider title="Title" dividerChar="!" dividerColor="red"/>
-	</span>
+	<Divider title="Title" dividerChar="!" dividerColor="red"/>
 );
 
 render(<Advanced/>);
