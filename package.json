@@ -21,7 +21,8 @@
     "test": "xo && ava",
     "build": "babel src --out-dir=dist",
     "prepublish": "npm run build",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "examples": "babel-node examples/basic.js && babel-node examples/advanced.js"
   },
   "files": [
     "dist"
@@ -41,8 +42,9 @@
     "string-width": "^4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.4.0",
+    "@babel/cli": "^7.11.5",
+    "@babel/core": "^7.11.5",
+    "@babel/node": "^7.10.5",
     "@babel/preset-react": "^7.0.0",
     "ava": "^1.4.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
