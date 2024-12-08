@@ -1,74 +1,81 @@
 # ink-divider
 
-[![CircleCI](https://circleci.com/gh/JureSotosek/ink-divider.svg?style=svg)](https://circleci.com/gh/JureSotosek/ink-divider)
-
 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink).
 
 ## Install
 
-```
-$ npm install ink-divider
+```bash
+npm i ink-divider
 ```
 
 ## Usage
 
-```js
-import React from 'react';
-import {render} from 'ink';
-import Divider from 'ink-divider';
+```jsx
+import { render } from 'ink'
+import Divider from 'ink-divider'
 
-render(<Divider title={'Title'} />);
+render(<Divider title='Title' />)
+
+// ─────────── Title ───────────
 ```
 
-<img src="media/example.png" width="720">
+<!-- markdownlint-disable-next-line-->
+<img src="media/example.png" alt="example" width="720">
 
 ## Props
 
 ### title
 
-Type: `string`<br>
-Default: `""`
+Type: `string`
+
+Default: `null`
 
 Title shown in the middle of the divider.
 
 ### width
 
-Type: `number`<br>
-Default: `50`
+Type: `'auto' | number`
+
+Default: `auto`
 
 Width of the divider.
 
 ### padding
 
-Type: `number`<br>
-Default: `1`
+Type: `number`
+
+Default: `0`
 
 Padding at the start and the end of the divider.
 
 ### titlePadding
 
-Type: `number`<br>
+Type: `number`
+
 Default: `1`
 
 Padding besides the title in the middle.
 
 ### titleColor
 
-Type: `string`<br>
+Type: `string`
+
 Default: `"white"`
 
 Color of the title.
 
 ### dividerChar
 
-Type: `string`<br>
-Default: `"-"`
+Type: `string`
+
+Default: `"─"`
 
 Char used as a divider.
 
 ### dividerColor
 
-Type: `string`<br>
+Type: `string`
+
 Default: `"gray"`
 
 Color of the divider chars.

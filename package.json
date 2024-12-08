@@ -1,79 +1,50 @@
 {
-  "name": "ink-divider",
-  "version": "0.0.0-development",
-  "description": "Divider component for Ink",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/juresotosek/ink-divider.git"
-  },
-  "author": {
-    "name": "Jure Sotosek",
-    "email": "jure.sotosek@gmail.com",
-    "url": "https://github.com/JureSotosek"
-  },
-  "main": "dist/index.js",
-  "engines": {
-    "node": ">=6"
-  },
-  "scripts": {
-    "pretest": "npm run build",
-    "test": "xo && ava",
-    "build": "babel src --out-dir=dist",
-    "prepublish": "npm run build",
-    "semantic-release": "semantic-release",
-    "examples": "babel-node examples/basic.js && babel-node examples/advanced.js"
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "ink",
-    "ink-component",
-    "ink-divider",
-    "ink-cli"
-  ],
-  "peerDependencies": {
-    "ink": ">=3.0.0",
-    "react": ">=16.8.0"
-  },
-  "dependencies": {
-    "prop-types": "^15.7.2",
-    "string-width": "^4.0.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.11.5",
-    "@babel/core": "^7.11.5",
-    "@babel/node": "^7.10.5",
-    "@babel/preset-react": "^7.0.0",
-    "ava": "^1.4.0",
-    "babel-plugin-transform-react-jsx": "^6.24.1",
-    "eslint-config-xo-react": "^0.19.0",
-    "eslint-plugin-react": "^7.12.4",
-    "eslint-plugin-react-hooks": "^1.6.0",
-    "ink": "^3.0.3",
-    "ink-testing-library": "^2.0.1",
-    "react": "^16.8.5",
-    "semantic-release": "^15.9.2",
-    "xo": "^0.25.3"
-  },
-  "babel": {
-    "presets": [
-      "@ava/stage-4",
-      "@babel/preset-react"
-    ]
-  },
-  "ava": {
-    "color": true
-  },
-  "xo": {
-    "extends": [
-      "xo-react"
-    ]
-  },
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true
-  }
+	"name": "ink-divider",
+	"version": "2.1.0",
+	"description": "Divider component for Ink",
+	"license": "MIT",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/juresotosek/ink-divider.git"
+	},
+	"author": {
+		"name": "Jure Sotosek",
+		"email": "jure.sotosek@gmail.com",
+		"url": "https://github.com/JureSotosek"
+	},
+	"module": "src/index.tsx",
+	"main": "dist/index.js",
+	"scripts": {
+		"lint": "biome check --fix",
+		"format": "biome format --write .",
+		"test": "bun test",
+		"preversion": "bun run test && bun run format && git add .",
+		"build": "bun build ./src/index.tsx --minify --outdir ./dist --target node --external=yoga-wasm-web",
+		"prepublishOnly": "bun run build"
+	},
+	"dependencies": {
+		"ink": "^5.1.0",
+		"react": "^18.3.1",
+		"yoga-wasm": "^0.0.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "^1.1.14",
+		"@types/react": "^18.3.14",
+		"changelogen": "^0.5.7",
+		"ink-testing-library": "^4.0.0"
+	},
+	"patchedDependencies": {
+		"ink@5.1.0": "patches/ink@5.1.0.patch"
+	},
+	"keywords": [
+		"ink",
+		"ink-component",
+		"ink-divider",
+		"ink-cli"
+	],
+	"trustedDependencies": [
+		"@biomejs/biome"
+	]
 }

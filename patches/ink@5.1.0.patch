@@ -1,0 +1,75 @@
+diff --git a/build/devtools-window-polyfill.d.ts b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools-window-polyfill.d.ts
+deleted file mode 100644
+index cb0ff5c3b541f646105198ee23ac0fc3d805023e..0000000000000000000000000000000000000000
+diff --git a/build/devtools-window-polyfill.js b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools-window-polyfill.js
+deleted file mode 100644
+index fa70f59393455ba28863debc1aac97c3960a9aa1..0000000000000000000000000000000000000000
+diff --git a/build/devtools-window-polyfill.js.map b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools-window-polyfill.js.map
+deleted file mode 100644
+index 2308a0d92293b0a64fb178d6a41a6f426774d956..0000000000000000000000000000000000000000
+diff --git a/build/devtools.d.ts b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools.d.ts
+deleted file mode 100644
+index 5c830167965dad7cb48aeea273b9f3d9c8344492..0000000000000000000000000000000000000000
+diff --git a/build/devtools.js b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools.js
+deleted file mode 100644
+index 85d20c6ed3438e1539fea84db6c32dddad276744..0000000000000000000000000000000000000000
+diff --git a/build/devtools.js.map b/home/okineadev/.bun/install/cache/ink@5.1.0@@@1/build/devtools.js.map
+deleted file mode 100644
+index 7d699a2a98ec0f15e57ae18507b4fa1a69daf290..0000000000000000000000000000000000000000
+diff --git a/build/reconciler.js b/build/reconciler.js
+index 77fc1ff9c90f3626bcfece5bcf94438e77df1b54..f0009962a532dc151ca5212ab2ede2594c0cbccd 100644
+--- a/build/reconciler.js
++++ b/build/reconciler.js
+@@ -4,30 +4,30 @@ import { DefaultEventPriority } from 'react-reconciler/constants.js';
+ import Yoga from 'yoga-wasm-web/auto';
+ import { createTextNode, appendChildNode, insertBeforeNode, removeChildNode, setStyle, setTextNodeValue, createNode, setAttribute, } from './dom.js';
+ import applyStyles from './styles.js';
+-// We need to conditionally perform devtools connection to avoid
+-// accidentally breaking other third-party code.
+-// See https://github.com/vadimdemedes/ink/issues/384
+-if (process.env['DEV'] === 'true') {
+-    try {
+-        await import('./devtools.js');
+-    }
+-    catch (error) {
+-        if (error.code === 'ERR_MODULE_NOT_FOUND') {
+-            console.warn(`
+-The environment variable DEV is set to true, so Ink tried to import \`react-devtools-core\`,
+-but this failed as it was not installed. Debugging with React Devtools requires it.
++// // We need to conditionally perform devtools connection to avoid
++// // accidentally breaking other third-party code.
++// // See https://github.com/vadimdemedes/ink/issues/384
++// if (process.env['DEV'] === 'true') {
++//     try {
++//         await import('./devtools.js');
++//     }
++//     catch (error) {
++//         if (error.code === 'ERR_MODULE_NOT_FOUND') {
++//             console.warn(`
++// The environment variable DEV is set to true, so Ink tried to import \`react-devtools-core\`,
++// but this failed as it was not installed. Debugging with React Devtools requires it.
+ 
+-To install use this command:
++// To install use this command:
+ 
+-$ npm install --save-dev react-devtools-core
+-				`.trim() + '\n');
+-        }
+-        else {
+-            // eslint-disable-next-line @typescript-eslint/only-throw-error
+-            throw error;
+-        }
+-    }
+-}
++// $ npm install --save-dev react-devtools-core
++// 				`.trim() + '\n');
++//         }
++//         else {
++//             // eslint-disable-next-line @typescript-eslint/only-throw-error
++//             throw error;
++//         }
++//     }
++// }
+ const diff = (before, after) => {
+     if (before === after) {
+         return;
