@@ -2,10 +2,14 @@ import { expect, test } from 'bun:test'
 
 import { Box, Text } from 'ink'
 import { render } from 'ink-testing-library'
+
 import Divider from '../src'
 
 test('divider in box with sample text', () => {
-	const expectation = render(
+	const lorem = (
+		<Text>Lorem ipsum dolor sit amet consectetur adipisicing elit</Text>
+	)
+	const { lastFrame } = render(
 		<Box
 			borderStyle='round'
 			flexDirection='column'
@@ -13,13 +17,13 @@ test('divider in box with sample text', () => {
 			paddingLeft={1}
 			paddingRight={1}
 		>
-			<Text>Lorem ipsum dolor sit amet consectetur adipisicing elit</Text>
+			{lorem}
 			<Divider title='Title' />
-			<Text>Lorem ipsum dolor sit amet consectetur adipisicing elit</Text>
+			{lorem}
 		</Box>
 	)
 
-	expect(expectation.lastFrame()).toMatchSnapshot()
+	expect(lastFrame()).toMatchSnapshot()
 })
 
 test('divider without title', () => {
