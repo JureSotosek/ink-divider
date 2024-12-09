@@ -18,7 +18,7 @@
 	"scripts": {
 		"lint": "biome check --fix",
 		"format": "biome format --write .",
-		"test": "bun test",
+		"test": "FORCE_COLOR=true bun test",
 		"preversion": "bun run test && bun run format && git add .",
 		"build": "bun build ./src/index.tsx --minify --outdir ./dist --target node --external=yoga-wasm-web",
 		"prepublishOnly": "bun run build",
@@ -44,6 +44,13 @@
 	"patchedDependencies": {
 		"ink@5.1.0": "patches/ink@5.1.0.patch"
 	},
-	"keywords": ["ink", "ink-component", "ink-divider", "ink-cli"],
-	"trustedDependencies": ["@biomejs/biome"]
+	"keywords": [
+		"ink",
+		"ink-component",
+		"ink-divider",
+		"ink-cli"
+	],
+	"trustedDependencies": [
+		"@biomejs/biome"
+	]
 }
