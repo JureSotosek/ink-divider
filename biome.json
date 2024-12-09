@@ -1,4 +1,8 @@
 {
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"files": {
+		"ignore": ["*.snap"]
+	},
 	"formatter": {
 		"enabled": true,
 		"useEditorconfig": true,
