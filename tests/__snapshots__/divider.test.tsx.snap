@@ -1,0 +1,29 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`divider in box with sample text 1`] = `
+"╭─────────────────────────────────────────────────────────╮
+│ Lorem ipsum dolor sit amet consectetur adipisicing elit │
+│ \x1B[90m────────────────────────\x1B[39m \x1B[37mTitle\x1B[39m \x1B[90m────────────────────────\x1B[39m │
+│ Lorem ipsum dolor sit amet consectetur adipisicing elit │
+╰─────────────────────────────────────────────────────────╯"
+`;
+
+exports[`divider without title 1`] = `"\x1B[90m────────────────────────────────────────────────────────────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with title 1`] = `"\x1B[90m───────────────────────────────────────────────\x1B[39m \x1B[37mTitle\x1B[39m \x1B[90m──────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with custom width 1`] = `"\x1B[90m────────────────────────────────────────────────────────────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with custom padding 1`] = `"  \x1B[90m────────────────────────────────────────────────────────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with title and custom titlePadding 1`] = `"\x1B[90m─────────────────────────────────────────────\x1B[39m   \x1B[37mTitle\x1B[39m   \x1B[90m────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with title and custom titleColor 1`] = `"\x1B[90m───────────────────────────────────────────────\x1B[39m \x1B[34mTitle\x1B[39m \x1B[90m──────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with custom dividerChar 1`] = `"\x1B[90m====================================================================================================\x1B[39m"`;
+
+exports[`divider with custom dividerColor 1`] = `"\x1B[31m────────────────────────────────────────────────────────────────────────────────────────────────────\x1B[39m"`;
+
+exports[`divider with all custom props 1`] = `" \x1B[33m******\x1B[39m  \x1B[32mCustom Title\x1B[39m  \x1B[33m******\x1B[39m"`;
+
+exports[`divider with title and other box props (flexGrow, etc.) 1`] = `" \x1B[37mTitle\x1B[39m"`;

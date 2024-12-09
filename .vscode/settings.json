@@ -1,0 +1,6 @@
+{
+	"editor.defaultFormatter": "biomejs.biome",
+	"files.associations": {
+		"*.snap": "javascript"
+	}
+}
