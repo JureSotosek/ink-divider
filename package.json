@@ -6,7 +6,7 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/juresotosek/ink-divider.git"
+		"url": "https://github.com/JureSotosek/ink-divider"
 	},
 	"author": {
 		"name": "Jure Sotosek",
