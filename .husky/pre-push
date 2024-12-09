@@ -1,1 +1,1 @@
-FORCE_COLOR=true bun test
+FORCE_COLOR=true bun run test
