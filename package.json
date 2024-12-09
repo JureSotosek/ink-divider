@@ -21,7 +21,8 @@
 		"test": "bun test",
 		"preversion": "bun run test && bun run format && git add .",
 		"build": "bun build ./src/index.tsx --minify --outdir ./dist --target node --external=yoga-wasm-web",
-		"prepublishOnly": "bun run build"
+		"prepublishOnly": "bun run build",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"ink": "^5.1.0",
@@ -33,7 +34,12 @@
 		"@types/bun": "^1.1.14",
 		"@types/react": "^18.3.14",
 		"changelogen": "^0.5.7",
-		"ink-testing-library": "^4.0.0"
+		"ink-testing-library": "^4.0.0",
+		"husky": "^9.1.6",
+		"lint-staged": "^15.2.10"
+	},
+	"lint-staged": {
+		"*": "bun run format"
 	},
 	"patchedDependencies": {
 		"ink@5.1.0": "patches/ink@5.1.0.patch"
