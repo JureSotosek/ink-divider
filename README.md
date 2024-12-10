@@ -1,5 +1,6 @@
-<!-- markdownlint-disable-next-line blanks-around-headings  -->
-# ${\color{gray}\tiny\textrm{──────}}$  ink-divider  ${\color{gray}\tiny\textrm{──────}}$
+<!-- # ${\color{gray}\tiny\textrm{──────}}$  ink-divider  ${\color{gray}\tiny\textrm{──────}}$ -->
+# ink-divider
+
 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink).
 
 ## 📥 Install
@@ -29,64 +30,6 @@ We advise you to view this example - [`examples/auto-grow.tsx`](https://github.c
 
 ---
 
-## ⚙️ Props
-
-### title
-
-Type: `string`
-
-Default: `null`
-
-Title shown in the middle of the divider.
-
-### width
-
-Type: `'auto' | number`
-
-Default: `auto`
-
-Width of the divider.
-
-### padding
-
-Type: `number`
-
-Default: `0`
-
-Padding at the start and the end of the divider.
-
-### titlePadding
-
-Type: `number`
-
-Default: `1`
-
-Padding besides the title in the middle.
-
-### titleColor
-
-Type: `string`
-
-Default: `"white"`
-
-Color of the title.
-
-### dividerChar
-
-Type: `string`
-
-Default: `"─"`
-
-Char used as a divider.
-
-### dividerColor
-
-Type: `string`
-
-Default: `"gray"`
-
-Color of the divider chars.
-
-## License
+## 📝 License
 
 MIT © [Jure Sotosek](https://github.com/JureSotosek)
