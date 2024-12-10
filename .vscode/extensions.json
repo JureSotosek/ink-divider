@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"oven.bun-vscode",
+		"davidanson.vscode-markdownlint",
+		"biomejs.biome",
+		"github.vscode-github-actions"
+	]
+}
