@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v4.0.1
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.0...v4.0.1)
+
+### 📖 Documentation
+
+- Add cool themed badges ([18d587c](https://github.com/JureSotosek/ink-divider/commit/18d587c))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v4.0.0
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.4.0...v4.0.0)
