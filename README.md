@@ -1,14 +1,16 @@
-# ink-divider
-
+<!-- markdownlint-disable-next-line blanks-around-headings  -->
+# ${\color{gray}\tiny──────}$  ink-divider  ${\color{gray}\tiny──────}$
 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink).
 
-## Install
+## 📥 Install
 
 ```bash
 npm i ink-divider
 ```
 
-## Usage
+## 🚀 Usage
+
+Here is the basic usage:
 
 ```jsx
 import { render } from 'ink'
@@ -19,10 +21,15 @@ render(<Divider title='Title' />)
 // ─────────── Title ───────────
 ```
 
-<!-- markdownlint-disable-next-line-->
-<img src="media/example.png" alt="example" width="720">
+The `<Divider>` component can also automatically adjust to the width of the container!
+We advise you to view this example - [`examples/auto-grow.tsx`](https://raw.githubusercontent.com/JureSotosek/ink-divider/refs/heads/master/examples/auto-grow.tsx), more examples in the [`examples`](https://github.com/JureSotosek/ink-divider/tree/master/exampes) folder
 
-## Props
+<!-- markdownlint-disable-next-line-->
+<img src="media/example.png" alt="example" width="550">
+
+---
+
+## ⚙️ Props
 
 ### title
 

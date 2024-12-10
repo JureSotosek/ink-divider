@@ -22,7 +22,11 @@
 		"preversion": "bun run test && bun run format && git add .",
 		"build": "bun build ./src/index.tsx --minify --outdir ./dist --target node --external=yoga-wasm-web",
 		"prepublishOnly": "bun run build",
-		"prepare": "husky"
+		"prepare": "husky",
+		"examples:basic": "bun ./examples/basic.tsx",
+		"examples:advanced": "bun ./examples/advanced.tsx",
+		"examples:auto-grow": "bun ./examples/auto-grow.tsx",
+		"examples": "bun run examples:basic && echo && bun run examples:advanced && echo && bun run examples:auto-grow"
 	},
 	"dependencies": {
 		"ink": "^5.1.0",
