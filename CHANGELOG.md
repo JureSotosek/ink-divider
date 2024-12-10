@@ -1,6 +1,32 @@
 # Changelog
 
 
+## v2.3.0
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.2.0...v2.3.0)
+
+### 🚀 Enhancements
+
+- Update examples and README ([6d911e7](https://github.com/JureSotosek/ink-divider/commit/6d911e7))
+- 🏷️  generate `.d.ts` types ([8fc9f19](https://github.com/JureSotosek/ink-divider/commit/8fc9f19))
+
+### 💅 Refactors
+
+- 🧑‍💻  remove `FORCE_COLOR=true` from `pre-push` hook ([e0dd4a1](https://github.com/JureSotosek/ink-divider/commit/e0dd4a1))
+
+### 📖 Documentation
+
+- Fix link to `auto-grow.tsx` example ([7df608d](https://github.com/JureSotosek/ink-divider/commit/7df608d))
+- Fix latex fonts ([8a2c7a2](https://github.com/JureSotosek/ink-divider/commit/8a2c7a2))
+
+### 🏡 Chore
+
+- Create CODE_OF_CONDUCT.md ([b5a6bd4](https://github.com/JureSotosek/ink-divider/commit/b5a6bd4))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v2.2.0
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.1.0...v2.2.0)
