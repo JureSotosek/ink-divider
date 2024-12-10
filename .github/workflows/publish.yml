@@ -2,6 +2,10 @@ name: 🚀 Release + Publish
 
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to release (e.g. 1.2.3)'
+        required: false
 
 permissions:
   id-token: write
@@ -41,9 +45,11 @@ jobs:
         run: bun run preversion
 
       - name: 📜 Generate changelog and release notes
+        env:
+          VERSION: ${{ github.event.inputs.version }}
         run: |
-          bunx changelogen --release --push
-          bunx changelogen github release --token ${{ secrets.GITHUB_TOKEN }}
+          bunx changelogen --release --push -r $VERSION
+          bunx changelogen github release --token ${{ secrets.GITHUB_TOKEN }} -r $VERSION
 
       - name: 🛠️ Build package
         run: bun run build
