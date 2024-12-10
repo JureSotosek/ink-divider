@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.4.0
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.3.2...v2.4.0)
+
+### 🚀 Enhancements
+
+- 🏷️  improve types ([bf05189](https://github.com/JureSotosek/ink-divider/commit/bf05189))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v2.3.2
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.3.1...v2.3.2)
