@@ -31,7 +31,9 @@ We advise you to view this example - [`examples/auto-grow.tsx`](https://github.c
 <!-- markdownlint-disable-next-line-->
 <img src="media/example.png" alt="example" width="550">
 
----
+## 🤝 Contributing
+
+Thank you for your interest in helping this project 😎, detailed instructions on contributing are at [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## 📝 License
 
