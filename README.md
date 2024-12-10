@@ -1,5 +1,5 @@
 <!-- markdownlint-disable-next-line blanks-around-headings  -->
-# ${\color{gray}\tiny──────}$  ink-divider  ${\color{gray}\tiny──────}$
+# ${\color{gray}\tiny\textrm{──────}}$  ink-divider  ${\color{gray}\tiny\textrm{──────}}$
 👩🏼‍🎨 Divider component for [Ink](https://github.com/vadimdemedes/ink).
 
 ## 📥 Install
