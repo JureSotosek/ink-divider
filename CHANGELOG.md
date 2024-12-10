@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v2.3.1
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.3.0...v2.3.1)
+
+### 🩹 Fixes
+
+- 🥀 remove latext divider ([59a1fc5](https://github.com/JureSotosek/ink-divider/commit/59a1fc5))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v2.3.0
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.2.0...v2.3.0)
