@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v4.0.0
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.4.0...v4.0.0)
+
+### 🚀 Enhancements
+
+- **ci:** Add the ability to manually select a release version ([b29a349](https://github.com/JureSotosek/ink-divider/commit/b29a349))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v2.4.0
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v2.3.2...v2.4.0)
