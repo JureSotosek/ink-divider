@@ -1,6 +1,6 @@
 {
 	"name": "ink-divider",
-	"version": "2.2.0",
+	"version": "2.3.0",
 	"description": "Divider component for Ink",
 	"license": "MIT",
 	"type": "module",
