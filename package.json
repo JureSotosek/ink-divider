@@ -15,7 +15,7 @@
 	},
 	"module": "src/index.tsx",
 	"main": "dist/index.js",
-	"types": "index.d.ts",
+	"types": "dist/index.d.ts",
 	"scripts": {
 		"lint": "biome check --fix",
 		"format": "biome format --write .",

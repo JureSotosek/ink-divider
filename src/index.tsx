@@ -3,7 +3,7 @@ import { Text, Box, type BoxProps, type TextProps } from 'ink'
 /**
  * Props for the Divider component.
  */
-export interface DividerProps extends BoxProps {
+export interface DividerProps {
 	/**
 	 * Title shown in the middle of the divider.
 	 *
@@ -53,13 +53,15 @@ export interface DividerProps extends BoxProps {
 	 * @default 'gray'
 	 */
 	dividerColor?: BoxProps['borderColor']
+
+	boxProps?: BoxProps
 }
 
 const BaseDivider: React.FC<DividerProps> = ({
 	width = 'auto',
 	dividerChar,
 	dividerColor = 'gray',
-	...props
+	boxProps,
 }) => (
 	<Box
 		width={width}
@@ -77,7 +79,7 @@ const BaseDivider: React.FC<DividerProps> = ({
 		borderLeft={false}
 		borderRight={false}
 		//
-		{...props}
+		{...boxProps}
 	/>
 )
 
@@ -95,13 +97,13 @@ const Divider: React.FC<DividerProps> = ({
 	titleColor = 'white',
 	dividerChar = '─',
 	dividerColor = 'gray',
-	...props
+	boxProps,
 }) => {
 	const dividerLine = (
 		<BaseDivider
 			dividerChar={dividerChar}
 			dividerColor={dividerColor}
-			{...props}
+			boxProps={boxProps}
 		/>
 	)
 
