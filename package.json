@@ -15,12 +15,14 @@
 	},
 	"module": "src/index.tsx",
 	"main": "dist/index.js",
+	"types": "index.d.ts",
 	"scripts": {
 		"lint": "biome check --fix",
 		"format": "biome format --write .",
 		"test": "FORCE_COLOR=true bun test",
 		"preversion": "bun run test && bun run format && git add .",
-		"build": "bun build ./src/index.tsx --minify --outdir ./dist --target node --external=yoga-wasm-web",
+		"build": "bun build ./src/index.tsx  --minify --outdir ./dist --target node --external=yoga-wasm-web",
+		"postbuild": "bunx --bun tsc -p ./tsconfig.declarations.json",
 		"prepublishOnly": "bun run build",
 		"prepare": "husky",
 		"examples:basic": "bun ./examples/basic.tsx",
@@ -38,9 +40,10 @@
 		"@types/bun": "^1.1.14",
 		"@types/react": "^18.3.14",
 		"changelogen": "^0.5.7",
-		"ink-testing-library": "^4.0.0",
 		"husky": "^9.1.6",
-		"lint-staged": "^15.2.10"
+		"ink-testing-library": "^4.0.0",
+		"lint-staged": "^15.2.10",
+		"typescript": "^5.7.2"
 	},
 	"lint-staged": {
 		"*": "bun run format"
