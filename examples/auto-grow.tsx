@@ -11,9 +11,9 @@ const lorem = (
  */
 render(
 	<Box
-		borderStyle='round' // Rounded border style for the Box.
-		flexDirection='column' // Arranges elements vertically within the Box.
-		alignSelf='flex-start' // Aligns the Box to the start of the cross axis.
+		borderStyle="round" // Rounded border style for the Box.
+		flexDirection="column" // Arranges elements vertically within the Box.
+		alignSelf="flex-start" // Aligns the Box to the start of the cross axis.
 		paddingLeft={1} // Left padding of the Box.
 		paddingRight={1} // Right padding of the Box.
 	>

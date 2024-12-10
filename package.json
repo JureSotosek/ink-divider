@@ -51,6 +51,13 @@
 	"patchedDependencies": {
 		"ink@5.1.0": "patches/ink@5.1.0.patch"
 	},
-	"keywords": ["ink", "ink-component", "ink-divider", "ink-cli"],
-	"trustedDependencies": ["@biomejs/biome"]
+	"keywords": [
+		"ink",
+		"ink-component",
+		"ink-divider",
+		"ink-cli"
+	],
+	"trustedDependencies": [
+		"@biomejs/biome"
+	]
 }

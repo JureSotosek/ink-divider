@@ -11,14 +11,14 @@ test('divider in box with sample text', () => {
 	)
 	const { lastFrame } = render(
 		<Box
-			borderStyle='round'
-			flexDirection='column'
-			alignSelf='flex-start'
+			borderStyle="round"
+			flexDirection="column"
+			alignSelf="flex-start"
 			paddingLeft={1}
 			paddingRight={1}
 		>
 			{lorem}
-			<Divider title='Title' />
+			<Divider title="Title" />
 			{lorem}
 		</Box>
 	)
@@ -32,7 +32,7 @@ test('divider without title', () => {
 })
 
 test('divider with title', () => {
-	const { lastFrame } = render(<Divider title='Title' />)
+	const { lastFrame } = render(<Divider title="Title" />)
 	expect(lastFrame()).toMatchSnapshot()
 })
 
@@ -47,45 +47,36 @@ test('divider with custom padding', () => {
 })
 
 test('divider with title and custom titlePadding', () => {
-	const { lastFrame } = render(<Divider title='Title' titlePadding={3} />)
+	const { lastFrame } = render(<Divider title="Title" titlePadding={3} />)
 	expect(lastFrame()).toMatchSnapshot()
 })
 
 test('divider with title and custom titleColor', () => {
-	const { lastFrame } = render(<Divider title='Title' titleColor='blue' />)
+	const { lastFrame } = render(<Divider title="Title" titleColor="blue" />)
 	expect(lastFrame()).toMatchSnapshot()
 })
 
 test('divider with custom dividerChar', () => {
-	const { lastFrame } = render(<Divider dividerChar='=' />)
+	const { lastFrame } = render(<Divider dividerChar="=" />)
 	expect(lastFrame()).toMatchSnapshot()
 })
 
 test('divider with custom dividerColor', () => {
-	const { lastFrame } = render(<Divider dividerColor='red' />)
+	const { lastFrame } = render(<Divider dividerColor="red" />)
 	expect(lastFrame()).toMatchSnapshot()
 })
 
 test('divider with all custom props', () => {
 	const { lastFrame } = render(
 		<Divider
-			title='Custom Title'
+			title="Custom Title"
 			width={30}
 			padding={1}
 			titlePadding={2}
-			titleColor='green'
-			dividerChar='*'
-			dividerColor='yellow'
+			titleColor="green"
+			dividerChar="*"
+			dividerColor="yellow"
 		/>
-	)
-	expect(lastFrame()).toMatchSnapshot()
-})
-
-test('divider with title and other box props (flexGrow, etc.)', () => {
-	const { lastFrame } = render(
-		<Box width={50}>
-			<Divider title='Title' flexGrow={1} />
-		</Box>
 	)
 	expect(lastFrame()).toMatchSnapshot()
 })

@@ -172,6 +172,7 @@ const Divider: React.FC<DividerProps> = ({
 		/>
 	)
 
+	// If there is no title, return only the divider line
 	if (!title) {
 		return (
 			<Box paddingLeft={padding} paddingRight={padding}>
@@ -180,6 +181,7 @@ const Divider: React.FC<DividerProps> = ({
 		)
 	}
 
+	// Otherwise, return the divider line with the title in the middle
 	return (
 		<Box
 			width={width}

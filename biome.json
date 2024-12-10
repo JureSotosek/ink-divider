@@ -1,7 +1,7 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
 	"files": {
-		"ignore": ["*.snap"]
+		"ignore": ["*.snap", "package.json"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -16,7 +16,7 @@
 	},
 	"javascript": {
 		"formatter": {
-			"jsxQuoteStyle": "single",
+			"jsxQuoteStyle": "double",
 			"quoteProperties": "asNeeded",
 			"trailingCommas": "es5",
 			"semicolons": "asNeeded",

@@ -7,9 +7,9 @@ import Divider from '../src'
  */
 const Advanced = () => (
 	<Divider
-		title='Title' // Title of the divider.
-		dividerChar='=' // Character used for the divider line (instead of '-').
-		dividerColor='red' // Color of the divider (red).
+		title="Title" // Title of the divider.
+		dividerChar="=" // Character used for the divider line (instead of '-').
+		dividerColor="red" // Color of the divider (red).
 		width={40} // Width of the divider line.
 	/>
 )
