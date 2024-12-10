@@ -14,15 +14,17 @@ Thank you for considering contributing to ink-divider 😀! We welcome contribut
    bun install
    ```
 
+### Bun runtime
+
 If you don't have [Bun](https://bun.sh/) installed, you can install it using this command:
 
-### Windows
+#### Windows
 
 ```powershell
 powershell -c "irm bun.sh/install.ps1 | iex"
 ```
 
-### Linux, macOS, Windows ([WSL](https://learn.microsoft.com/windows/wsl/install))
+#### Linux, macOS, Windows ([WSL](https://learn.microsoft.com/windows/wsl/install))
 
 ```bash
 curl -fsSL bun.sh/install | bash
