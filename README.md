@@ -26,7 +26,7 @@ render(<Divider title='Title' />)
 ```
 
 The `<Divider>` component can also automatically adjust to the width of the container!
-We advise you to view this example - [`examples/auto-grow.tsx`](https://github.com/JureSotosek/ink-divider/blob/master/examples/auto-grow.tsx), more examples in the [`examples`](https://github.com/JureSotosek/ink-divider/tree/master/exampes) folder
+We advise you to view this example - [`examples/auto-grow.tsx`](https://github.com/JureSotosek/ink-divider/blob/master/examples/auto-grow.tsx), more examples in the [`examples`](https://github.com/JureSotosek/ink-divider/tree/master/examples) folder
 
 <!-- markdownlint-disable-next-line-->
 <img src="media/example.png" alt="example" width="550">
