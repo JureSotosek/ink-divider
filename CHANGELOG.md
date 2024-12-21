@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v4.0.2
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.1...v4.0.2)
+
+### 🩹 Fixes
+
+- 🚑 fix typo in readme ([f51677b](https://github.com/JureSotosek/ink-divider/commit/f51677b))
+
+### 📖 Documentation
+
+- Create `CONTRIBUTING.md` ([#11](https://github.com/JureSotosek/ink-divider/pull/11))
+- Improve CONTRIBUTING.md ([86238da](https://github.com/JureSotosek/ink-divider/commit/86238da))
+- Add contributing section ([14fe192](https://github.com/JureSotosek/ink-divider/commit/14fe192))
+
+### 🏡 Chore
+
+- Add VS Code extensions reccomendations ([5bc8a08](https://github.com/JureSotosek/ink-divider/commit/5bc8a08))
+- Improve formatting ([6f6816d](https://github.com/JureSotosek/ink-divider/commit/6f6816d))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v4.0.1
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.0...v4.0.1)
