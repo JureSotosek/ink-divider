@@ -4,18 +4,18 @@ on:
   # https://blog.esciencecenter.nl/reduce-reuse-recycle-save-the-planet-one-github-action-at-a-time-4ab602255c3f
   push:
     paths:
-      - 'patches/'
-      - 'src/'
-      - 'tests/'
+      - 'patches/**'
+      - 'src/**'
+      - 'tests/**'
       - 'package.json'
       - 'bun.lockb'
       - 'tsconfig.json'
 
   pull_request:
     paths:
-      - 'patches/'
-      - 'src/'
-      - 'tests/'
+      - 'patches/**'
+      - 'src/**'
+      - 'tests/**'
       - 'package.json'
       - 'bun.lockb'
       - 'tsconfig.json'
