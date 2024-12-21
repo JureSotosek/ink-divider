@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v4.0.3
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.2...v4.0.3)
+
+### 🩹 Fixes
+
+- 🔧 fix test workflow trigger paths ([3729391](https://github.com/JureSotosek/ink-divider/commit/3729391))
+
+### 🏡 Chore
+
+- 🔧 update test workflow trigger paths ([23fd7c0](https://github.com/JureSotosek/ink-divider/commit/23fd7c0))
+
+### ✅ Tests
+
+- ✨ add snapshot test for `Divider` with custom title and width ([d4f3f3b](https://github.com/JureSotosek/ink-divider/commit/d4f3f3b))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v4.0.2
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.1...v4.0.2)
