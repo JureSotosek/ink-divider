@@ -46,6 +46,11 @@ test('divider with custom padding', () => {
 	expect(lastFrame()).toMatchSnapshot()
 })
 
+test('divider with custom title and width', () => {
+	const { lastFrame } = render(<Divider title="Title" width={20} />)
+	expect(lastFrame()).toMatchSnapshot()
+})
+
 test('divider with title and custom titlePadding', () => {
 	const { lastFrame } = render(<Divider title="Title" titlePadding={3} />)
 	expect(lastFrame()).toMatchSnapshot()
