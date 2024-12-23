@@ -6,6 +6,7 @@
 		"useIgnoreFile": true
 	},
 	"files": {
+		"ignoreUnknown": true,
 		"ignore": ["*.snap", "package.json"]
 	},
 	"organizeImports": {
