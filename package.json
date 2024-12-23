@@ -18,7 +18,7 @@
 	"types": "dist/index.d.ts",
 	"scripts": {
 		"lint": "biome check --fix",
-		"format": "biome format --write .",
+		"format": "biome format --write",
 		"test": "FORCE_COLOR=true bun test",
 		"preversion": "bun run test && bun run format && git add .",
 		"build": "bun build ./src/index.tsx  --minify --outdir ./dist --target node --external=yoga-wasm-web",
@@ -31,8 +31,7 @@
 		"examples": "bun run examples:basic && echo && bun run examples:advanced && echo && bun run examples:auto-grow"
 	},
 	"dependencies": {
-		"ink": "^5.1.0",
-		"react": "^18.3.1"
+		"ink": "^5.1.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
