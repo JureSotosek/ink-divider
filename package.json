@@ -44,7 +44,7 @@
 		"typescript": "^5.7.2"
 	},
 	"lint-staged": {
-		"*": "bun run format"
+		"*": "bun run format --no-errors-on-unmatched"
 	},
 	"patchedDependencies": {
 		"ink@5.1.0": "patches/ink@5.1.0.patch"

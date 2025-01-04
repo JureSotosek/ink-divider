@@ -9,7 +9,7 @@ on:
       - 'tests/**'
       - '.bun-version'
       - 'package.json'
-      - 'bun.lockb'
+      - 'bun.lock'
       - 'tsconfig.json'
 
   pull_request:
@@ -19,7 +19,7 @@ on:
       - 'tests/**'
       - '.bun-version'
       - 'package.json'
-      - 'bun.lockb'
+      - 'bun.lock'
       - 'tsconfig.json'
 
   workflow_dispatch:
