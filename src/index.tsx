@@ -3,7 +3,7 @@ import { Text, Box, type BoxProps, type TextProps } from 'ink'
 /**
  * Props for the Divider component.
  */
-export interface DividerProps {
+interface DividerProps {
 	/**
 	 * Title shown in the middle of the divider.
 	 *
