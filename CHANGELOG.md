@@ -1,35 +1,6 @@
 # Changelog
 
 
-## v4.1.0
-
-[compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.3...v4.1.0)
-
-### 🚀 Enhancements
-
-- **ci:** ✨ add `.bun-version` to test workflow triggers ([fe66bf2](https://github.com/JureSotosek/ink-divider/commit/fe66bf2))
-
-### 🔥 Performance
-
-- ⚡ use `tsup` for building and reduce package size ([1777960](https://github.com/JureSotosek/ink-divider/commit/1777960))
-
-### 🩹 Fixes
-
-- Fix `biome.json` configuration and refactor `package.json` ([5c5d8f5](https://github.com/JureSotosek/ink-divider/commit/5c5d8f5))
-- **biome.json:** 🐛 add `ignoreUnknown` option to files configuration ([79e5ab4](https://github.com/JureSotosek/ink-divider/commit/79e5ab4))
-
-### 🏡 Chore
-
-- 🔒 use text-based Bun lockfile ([46f9c9a](https://github.com/JureSotosek/ink-divider/commit/46f9c9a))
-- **release:** V4.1.0 ([752be92](https://github.com/JureSotosek/ink-divider/commit/752be92))
-- **release:** V4.1.0" ([c8c8826](https://github.com/JureSotosek/ink-divider/commit/c8c8826))
-- **release:** V4.1.0 ([c0bd391](https://github.com/JureSotosek/ink-divider/commit/c0bd391))
-- **release:** V4.1.0" ([142060a](https://github.com/JureSotosek/ink-divider/commit/142060a))
-
-### ❤️ Contributors
-
-- Okinea Dev ([@okineadev](http://github.com/okineadev))
-
 ## v4.0.3
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.2...v4.0.3)
