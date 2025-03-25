@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v4.1.1
+
+[compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.1.0...v4.1.1)
+
+### 🔥 Performance
+
+- **ci:** ⚡ cache Bun dependencies ([43f26e8](https://github.com/JureSotosek/ink-divider/commit/43f26e8))
+
+### 🏡 Chore
+
+- 📝 add issue and pull request templates ([80006e5](https://github.com/JureSotosek/ink-divider/commit/80006e5))
+- Add @okineadev as contributor ([29b94ba](https://github.com/JureSotosek/ink-divider/commit/29b94ba))
+
+### ❤️ Contributors
+
+- Okinea Dev ([@okineadev](http://github.com/okineadev))
+
 ## v4.1.0
 
 [compare changes](https://github.com/JureSotosek/ink-divider/compare/v4.0.3...v4.1.0)
