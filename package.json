@@ -13,6 +13,11 @@
 		"email": "jure.sotosek@gmail.com",
 		"url": "https://github.com/JureSotosek"
 	},
+	"contributors": [{
+		"name": "Yurii Bogdan",
+		"email": "hi@okinea.dev",
+		"url": "https://okinea.dev"
+	}]
 	"module": "src/index.tsx",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
