@@ -28,7 +28,7 @@
 		"format": "biome format --write",
 		"test": "FORCE_COLOR=true bun test",
 		"preversion": "bun run test && bun run format && git add .",
-		"build": "bunx --bun tsup",
+		"build": "bunup",
 		"prepublishOnly": "bun run build",
 		"prepare": "husky",
 		"examples:basic": "bun ./examples/basic.tsx",
@@ -43,11 +43,11 @@
 		"@biomejs/biome": "1.9.4",
 		"@types/bun": "^1.1.14",
 		"@types/react": "^18.3.14",
+		"bunup": "^0.5.6",
 		"changelogen": "^0.5.7",
 		"husky": "^9.1.6",
 		"ink-testing-library": "^4.0.0",
-		"lint-staged": "^15.2.10",
-		"tsup": "^8.3.5"
+		"lint-staged": "^15.2.10"
 	},
 	"lint-staged": {
 		"*": "bun run format --no-errors-on-unmatched"

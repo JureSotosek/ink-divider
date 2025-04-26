@@ -1,11 +1,10 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'bunup'
 
 export default defineConfig({
 	entry: ['src/index.tsx'],
 	format: ['esm'],
 	dts: true, // Generate declaration file (.d.ts)
-	external: ['yoga-wasm-web', 'react'], // Don't include this packages in bundle
+	external: ['yoga-wasm-web', 'react'], // Exclude these packages from the bundle
 	minify: true,
-	sourcemap: true,
 	clean: true,
 })
